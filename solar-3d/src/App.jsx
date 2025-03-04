@@ -144,7 +144,7 @@ const SolarSystem = () => {
   };
 
   return (
-    <div style={{ position: "absolute", top: 10, left: 10, background: "rgba(0,0,0,0.7)", padding: 10, borderRadius: 5, color: "white" }}>
+    <div style={{ position: "absolute", top: 0, left: 0, height: "auto", background: "rgba(0,0,0,0.7)", padding: 10, borderRadius: 5, color: "white" }}>
       <h2>Planet Controls</h2>
       {Object.keys(planetConfigs).map((name) => (
         <div key={name}>
