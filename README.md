@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is a 3D Solar System built using the following stack (Firebase , React, Node.js). The application provides a user-friendly interface for viewing the solar system including the sun.
+This is a 3D Solar System built using the following stack (Firebase , React , ExpressJs , Node.js). The application provides a user-friendly interface for viewing the solar system including the sun.
 
 ## Features
 
@@ -18,10 +18,9 @@ This is a 3D Solar System built using the following stack (Firebase , React, Nod
 
 ## Technologies Used
 
-- **Frontend**: React, Redux (for state management), Axios (for API calls)
+- **Frontend**: React ,  Axios (for API calls)
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB, Mongoose
-- **Real-Time Chat**: Socket.io
+- **Database**: FireBase
 - **Authentication**: JWT (JSON Web Tokens)
 - **Styling**: CSS, Bootstrap or Material-UI
 
@@ -30,7 +29,7 @@ This is a 3D Solar System built using the following stack (Firebase , React, Nod
 ### Prerequisites
 
 - Node.js (v14 or later)
-- MongoDB (local or cloud instance)
+- FireBase (local or cloud instance)
 
 ### Steps
 

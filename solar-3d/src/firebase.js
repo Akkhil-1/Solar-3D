@@ -2,12 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyBPXPwy8_Q8IEPkmRHvJWiKBwze5VQ3qdU",
+    authDomain: "solar-3d-638d9.firebaseapp.com",
+    projectId: "solar-3d-638d9",
+    storageBucket: "solar-3d-638d9.firebasestorage.app",
+    messagingSenderId: "576698567493",
+    appId: "1:576698567493:web:00708099ae73876431cc2c",
+    measurementId: "G-F2QPE62MQW"
 };
 
 const app = initializeApp(firebaseConfig);
