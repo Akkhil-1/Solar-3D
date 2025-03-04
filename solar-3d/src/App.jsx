@@ -6,12 +6,13 @@ import { initializeApp } from "firebase/app";
 
 // Firebase Config (Replace with your own)
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBPXPwy8_Q8IEPkmRHvJWiKBwze5VQ3qdU",
+  authDomain: "solar-3d-638d9.firebaseapp.com",
+  projectId: "solar-3d-638d9",
+  storageBucket: "solar-3d-638d9.appspot.com",
+  messagingSenderId: "576698567493",
+  appId: "1:576698567493:web:00708099ae73876431cc2c",
+  measurementId: "G-F2QPE62MQW"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -116,15 +117,29 @@ const SolarSystem = () => {
 
   // Save Configurations to Firebase
   const saveConfig = async () => {
-    await addDoc(collection(db, "solar_configs"), { planets: planetConfigs });
+    try {
+      await addDoc(collection(db, "solar_configs"), { planets: planetConfigs });
+      alert("Configuration saved successfully!");
+    } catch (error) {
+      console.error("Error saving configuration: ", error);
+      alert("Failed to save configuration.");
+    }
   };
 
   // Load Configurations from Firebase
   const loadConfig = async () => {
-    const querySnapshot = await getDocs(collection(db, "solar_configs"));
-    if (!querySnapshot.empty) {
-      const latestConfig = querySnapshot.docs[querySnapshot.docs.length - 1].data();
-      setPlanetConfigs(latestConfig.planets);
+    try {
+      const querySnapshot = await getDocs(collection(db, "solar_configs"));
+      if (!querySnapshot.empty) {
+        const latestConfig = querySnapshot.docs[querySnapshot.docs.length - 1].data();
+        setPlanetConfigs(latestConfig.planets);
+        alert("Configuration loaded successfully!");
+      } else {
+        alert("No configurations found.");
+      }
+    } catch (error) {
+      console.error("Error loading configuration: ", error);
+      alert("Failed to load configuration.");
     }
   };
 
