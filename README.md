@@ -1,10 +1,10 @@
-# Booking Management System
+# 3D Solar System
 
 ## Frontend Hosted Link :-  https://work-wave-five.vercel.app/
 
 ## Overview
 
-This is a Booking Management System built using the MERN stack (MongoDB, Express.js, React, Node.js). The application provides a user-friendly interface for managing bookings, with full user authentication, error handling, and various features designed to enhance the user experience.
+This is a 3D Solar System built using the following stack (Firebase , React, Node.js). The application provides a user-friendly interface for viewing the solar system including the sun.
 
 ## Features
 
@@ -34,10 +34,12 @@ This is a Booking Management System built using the MERN stack (MongoDB, Express
 
 ### Steps
 
-1. **Clone the repository**:
+1. **Steps to Start Frontend**:
    ```bash
-   git clone https://github.com/yourusername/booking-management-system.git
-   cd booking-management-system
+   git clone https://github.com/Akkhil-1/Solar-3D.git
+   cd solar-3d
+   npm install
+   npm run dev
    ```
 2. **Steps to Start Backend**:
    ```bash
